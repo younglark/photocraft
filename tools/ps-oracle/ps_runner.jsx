@@ -273,6 +273,9 @@ function outSlices(doc, spec, dir, res, warnings) {
     // Extra evidence: Photoshop's own Save for Web slice export (names by PS, best effort).
     try {
         var sfw = ensureDir(dir + "/sfw");
+        // SFW with slices writes into <dest>/images/; PS shows a modal error if it is missing.
+        ensureDir(dir + "/sfw/images");
+        app.displayDialogs = DialogModes.NO;
         var o = new ExportOptionsSaveForWeb();
         o.format = SaveDocumentType.PNG;
         o.PNG8 = false;
@@ -281,8 +284,8 @@ function outSlices(doc, spec, dir, res, warnings) {
         o.interlaced = false;
         app.activeDocument = doc;
         doc.exportDocument(sfw, ExportType.SAVEFORWEB, o);
-        var fl = sfw.getFiles(), names = [];
-        for (var k = 0; k < fl.length; k++) names.push(decodeURI(fl[k].name));
+        var fl = sfw.getFiles().concat(new Folder(dir + "/sfw/images").getFiles()), names = [];
+        for (var k = 0; k < fl.length; k++) if (fl[k] instanceof File) names.push(decodeURI(fl[k].name));
         res.sfw = names;
     } catch (e2) { warnings.push("save for web extra failed: " + e2); }
 }
