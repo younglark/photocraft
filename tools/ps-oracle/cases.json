@@ -1,0 +1,7422 @@
+{
+ "version": 1,
+ "colour": "raw document values, no colour conversion; 8-bit RGB(A) PNG; ICC ignored by compare",
+ "pathSemantics": "path = [{name,index}] top-level first; index counts siblings from the top",
+ "files": [
+  {
+   "id": "clipping-mask",
+   "psd": "psds/psd-tools/clipping-mask.psd",
+   "note": "groups, shapes, clipping",
+   "width": 360,
+   "height": 200,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CS3 Windows",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "group",
+   "psd": "psds/psd-tools/group.psd",
+   "note": "simple group",
+   "width": 100,
+   "height": 200,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CS3 Windows",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "hidden-groups",
+   "psd": "psds/psd-tools/hidden-groups.psd",
+   "note": "hidden group",
+   "width": 100,
+   "height": 200,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CS3 Windows",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "hidden-layer",
+   "psd": "psds/psd-tools/hidden-layer.psd",
+   "note": "hidden layer",
+   "width": 100,
+   "height": 150,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CS3 Windows",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "mask",
+   "psd": "psds/psd-tools/mask.psd",
+   "note": "layer mask",
+   "width": 100,
+   "height": 150,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CS3 Windows",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "masks",
+   "psd": "psds/psd-tools/masks.psd",
+   "note": "type, groups, masks, fx",
+   "width": 640,
+   "height": 1394,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "layer-effects",
+   "psd": "psds/psd-tools/layer_effects.psd",
+   "note": "type layers with every effect",
+   "width": 800,
+   "height": 640,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2017 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "blend-and-clipping",
+   "psd": "psds/psd-tools/blend-and-clipping.psd",
+   "note": "blend modes + clipping",
+   "width": 512,
+   "height": 512,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2017 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "placedLayer",
+   "psd": "psds/psd-tools/placedLayer.psd",
+   "note": "smart objects",
+   "width": 256,
+   "height": 256,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2014 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "smart-object-slice",
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "note": "smart object + slices",
+   "width": 100,
+   "height": 100,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CS3 Windows",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "slices",
+   "psd": "psds/psd-tools/slices.psd",
+   "note": "10 slices",
+   "width": 240,
+   "height": 180,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2017 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "layers-minimal-type-layer",
+   "psd": "psds/psd-tools/layers-minimal/type-layer.psd",
+   "note": "single type layer",
+   "width": 32,
+   "height": 32,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2018 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "layers-minimal-shape-layer",
+   "psd": "psds/psd-tools/layers-minimal/shape-layer.psd",
+   "note": "single shape layer",
+   "width": 32,
+   "height": 32,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2018 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "layers-minimal-smartobject-layer",
+   "psd": "psds/psd-tools/layers-minimal/smartobject-layer.psd",
+   "note": "single smart object",
+   "width": 32,
+   "height": 32,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2018 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups",
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "note": "knockout / isolation",
+   "width": 256,
+   "height": 256,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 21.0 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "transparency-transparency-group",
+   "psd": "psds/psd-tools/transparency/transparency-group.psd",
+   "note": "transparency groups",
+   "width": 256,
+   "height": 256,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 21.0 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "effects-shape-fx",
+   "psd": "psds/psd-tools/effects/shape-fx.psd",
+   "note": "group fx",
+   "width": 256,
+   "height": 256,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 21.0 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "effects-stroke-effects",
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "note": "strokes",
+   "width": 117,
+   "height": 157,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2019 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": null
+  },
+  {
+   "id": "effects-blend-modes",
+   "psd": "psds/psd-tools/effects/blend-modes.psd",
+   "note": "fx blend modes (PS 27.9)",
+   "width": 200,
+   "height": 200,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 27.9 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "effects-group-clips-child-stroke",
+   "psd": "psds/psd-tools/effects/group-clips-child-stroke.psd",
+   "note": "group clipping + stroke (PS 27.9)",
+   "width": 96,
+   "height": 32,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 27.9 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "adjustments-curves-rgb",
+   "psd": "psds/psd-tools/adjustments/curves_rgb.psd",
+   "note": "curves",
+   "width": 200,
+   "height": 200,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 23.0 (Windows)",
+   "photoshopSaved": true,
+   "iccProfile": null
+  },
+  {
+   "id": "adjustments-huesaturation-rgb",
+   "psd": "psds/psd-tools/adjustments/huesaturation_rgb.psd",
+   "note": "hue/sat",
+   "width": 200,
+   "height": 200,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 23.0 (Windows)",
+   "photoshopSaved": true,
+   "iccProfile": null
+  },
+  {
+   "id": "fill-adjustments",
+   "psd": "psds/psd-tools/fill_adjustments.psd",
+   "note": "many adjustment kinds",
+   "width": 256,
+   "height": 256,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2017 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "clipping-mask2",
+   "psd": "psds/psd-tools/clipping-mask2.psd",
+   "note": "clipped adjustments",
+   "width": 512,
+   "height": 512,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2017 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "passthrough-blendmodes1",
+   "psd": "psds/psd-tools/passthrough_blendmodes1.psd",
+   "note": "pass-through groups",
+   "width": 32,
+   "height": 32,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 21.2 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "blend-modes-rgb-blend-modes",
+   "psd": "psds/psd-tools/blend-modes/rgb-blend-modes.psd",
+   "note": "all blend modes, 54 SOs",
+   "width": 530,
+   "height": 512,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 21.0 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "blend-modes-multiply",
+   "psd": "psds/psd-tools/blend-modes/multiply.psd",
+   "note": "multiply",
+   "width": 64,
+   "height": 64,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2019 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": null
+  },
+  {
+   "id": "blend-modes-soft-light",
+   "psd": "psds/psd-tools/blend-modes/soft-light.psd",
+   "note": "soft light",
+   "width": 64,
+   "height": 64,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2019 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": null
+  },
+  {
+   "id": "blend-modes-color-dodge",
+   "psd": "psds/psd-tools/blend-modes/color-dodge.psd",
+   "note": "color dodge",
+   "width": 64,
+   "height": 64,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2019 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": null
+  },
+  {
+   "id": "blend-modes-hue",
+   "psd": "psds/psd-tools/blend-modes/hue.psd",
+   "note": "hue",
+   "width": 64,
+   "height": 64,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2019 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": null
+  },
+  {
+   "id": "mask-density-layervectormask",
+   "psd": "psds/psd-tools/mask-density-layervectormask.psd",
+   "note": "mask density + vector mask",
+   "width": 32,
+   "height": 32,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 21.2 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "artboard",
+   "psd": "psds/psd-tools/artboard.psd",
+   "note": "artboard",
+   "width": 1154,
+   "height": 1061,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2015 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "adjustment-fillers",
+   "psd": "psds/psd-tools/adjustment-fillers.psd",
+   "note": "fill layers",
+   "width": 512,
+   "height": 512,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2017 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "layer-comps",
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "note": "Adobe RGB (1998) tagged",
+   "width": 200,
+   "height": 200,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CS5 Windows",
+   "photoshopSaved": true,
+   "iccProfile": "Adobe RGB (1998)"
+  },
+  {
+   "id": "read-group-drop-shadows",
+   "psd": "psds/psd/ag-psd/read/group-drop-shadows/src.psd",
+   "note": "group drop shadows (PS 26.5)",
+   "width": 1000,
+   "height": 1000,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 26.5 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "read-write-text",
+   "psd": "psds/psd/ag-psd/read-write/text/src.psd",
+   "note": "text",
+   "width": 200,
+   "height": 200,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CS6 (Windows)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "read-write-shapes",
+   "psd": "psds/psd/ag-psd/read-write/shapes/src.psd",
+   "note": "shapes + smart objects",
+   "width": 500,
+   "height": 500,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CC 2019 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": null
+  },
+  {
+   "id": "read-write-float-color",
+   "psd": "psds/psd/ag-psd/read-write/float-color/src.psd",
+   "note": "float colours, text (PS 24.1)",
+   "width": 400,
+   "height": 568,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop 24.1 (Macintosh)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  },
+  {
+   "id": "read-write-group-blend",
+   "psd": "psds/psd/ag-psd/read-write/group-blend/src.psd",
+   "note": "group blend",
+   "width": 200,
+   "height": 200,
+   "mode": "Rgb",
+   "depth": 8,
+   "creatorTool": "Adobe Photoshop CS6 (Windows)",
+   "photoshopSaved": true,
+   "iccProfile": "sRGB IEC61966-2.1"
+  }
+ ],
+ "cases": [
+  {
+   "id": "clipping-mask__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/clipping-mask.psd",
+   "file": "clipping-mask"
+  },
+  {
+   "id": "clipping-mask__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd-tools/clipping-mask.psd",
+   "file": "clipping-mask"
+  },
+  {
+   "id": "clipping-mask__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      },
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "Shape 'Shape 2'",
+   "psd": "psds/psd-tools/clipping-mask.psd",
+   "file": "clipping-mask"
+  },
+  {
+   "id": "clipping-mask__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      },
+      {
+       "name": "Group 1",
+       "index": 2
+      },
+      {
+       "name": "Shape 4",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      },
+      {
+       "name": "Group 1",
+       "index": 2
+      },
+      {
+       "name": "Shape 4",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Shape 4'",
+   "psd": "psds/psd-tools/clipping-mask.psd",
+   "file": "clipping-mask"
+  },
+  {
+   "id": "clipping-mask__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      },
+      {
+       "name": "Group 1",
+       "index": 2
+      },
+      {
+       "name": "Shape 3",
+       "index": 1
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      },
+      {
+       "name": "Group 1",
+       "index": 2
+      },
+      {
+       "name": "Shape 3",
+       "index": 1
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Shape 3'",
+   "psd": "psds/psd-tools/clipping-mask.psd",
+   "file": "clipping-mask"
+  },
+  {
+   "id": "clipping-mask__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Group 2'",
+   "psd": "psds/psd-tools/clipping-mask.psd",
+   "file": "clipping-mask"
+  },
+  {
+   "id": "group__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/group.psd",
+   "file": "group"
+  },
+  {
+   "id": "group__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd-tools/group.psd",
+   "file": "group"
+  },
+  {
+   "id": "group__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Shape 1'",
+   "psd": "psds/psd-tools/group.psd",
+   "file": "group"
+  },
+  {
+   "id": "group__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Shape 1'",
+   "psd": "psds/psd-tools/group.psd",
+   "file": "group"
+  },
+  {
+   "id": "group__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Group 1'",
+   "psd": "psds/psd-tools/group.psd",
+   "file": "group"
+  },
+  {
+   "id": "hidden-groups__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/hidden-groups.psd",
+   "file": "hidden-groups"
+  },
+  {
+   "id": "hidden-groups__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd-tools/hidden-groups.psd",
+   "file": "hidden-groups"
+  },
+  {
+   "id": "hidden-groups__show",
+   "ops": [
+    {
+     "op": "show",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 1
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "show Group",
+   "psd": "psds/psd-tools/hidden-groups.psd",
+   "file": "hidden-groups"
+  },
+  {
+   "id": "hidden-groups__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Group 1",
+       "index": 1
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/hidden-groups.psd",
+   "file": "hidden-groups"
+  },
+  {
+   "id": "hidden-groups__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Group 2",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/hidden-groups.psd",
+   "file": "hidden-groups"
+  },
+  {
+   "id": "hidden-groups__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 1
+      },
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 1
+      },
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Shape 1'",
+   "psd": "psds/psd-tools/hidden-groups.psd",
+   "file": "hidden-groups"
+  },
+  {
+   "id": "hidden-groups__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      },
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      },
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Shape 2'",
+   "psd": "psds/psd-tools/hidden-groups.psd",
+   "file": "hidden-groups"
+  },
+  {
+   "id": "hidden-groups__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Group 2'",
+   "psd": "psds/psd-tools/hidden-groups.psd",
+   "file": "hidden-groups"
+  },
+  {
+   "id": "hidden-layer__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/hidden-layer.psd",
+   "file": "hidden-layer"
+  },
+  {
+   "id": "hidden-layer__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/hidden-layer.psd",
+   "file": "hidden-layer"
+  },
+  {
+   "id": "hidden-layer__show",
+   "ops": [
+    {
+     "op": "show",
+     "path": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "show Shape",
+   "psd": "psds/psd-tools/hidden-layer.psd",
+   "file": "hidden-layer"
+  },
+  {
+   "id": "hidden-layer__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/hidden-layer.psd",
+   "file": "hidden-layer"
+  },
+  {
+   "id": "hidden-layer__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/hidden-layer.psd",
+   "file": "hidden-layer"
+  },
+  {
+   "id": "hidden-layer__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Shape 1'",
+   "psd": "psds/psd-tools/hidden-layer.psd",
+   "file": "hidden-layer"
+  },
+  {
+   "id": "hidden-layer__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Shape 1'",
+   "psd": "psds/psd-tools/hidden-layer.psd",
+   "file": "hidden-layer"
+  },
+  {
+   "id": "mask__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/mask.psd",
+   "file": "mask"
+  },
+  {
+   "id": "mask__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Background copy",
+       "index": 1
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd-tools/mask.psd",
+   "file": "mask"
+  },
+  {
+   "id": "mask__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Background copy",
+       "index": 1
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/mask.psd",
+   "file": "mask"
+  },
+  {
+   "id": "mask__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Background copy",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/mask.psd",
+   "file": "mask"
+  },
+  {
+   "id": "mask__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Shape 1'",
+   "psd": "psds/psd-tools/mask.psd",
+   "file": "mask"
+  },
+  {
+   "id": "mask__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Background copy",
+       "index": 1
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Background copy",
+       "index": 1
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Background copy'",
+   "psd": "psds/psd-tools/mask.psd",
+   "file": "mask"
+  },
+  {
+   "id": "mask__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Shape 1'",
+   "psd": "psds/psd-tools/mask.psd",
+   "file": "mask"
+  },
+  {
+   "id": "masks__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Rounded Rectangle 3",
+       "index": 3
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__show",
+   "ops": [
+    {
+     "op": "show",
+     "path": [
+      {
+       "name": "background",
+       "index": 8
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "show Fill",
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Color Fill 1",
+       "index": 7
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Color Fill 1",
+       "index": 7
+      }
+     ],
+     "target": [
+      {
+       "name": "Header",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__moveInto",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "text replaced",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Header",
+       "index": 0
+      }
+     ],
+     "position": "into"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "into = top of the group (Photoshop drop-on-group)",
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__rasterize-type",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      },
+      {
+       "name": "sign in",
+       "index": 2
+      }
+     ],
+     "what": "type"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      },
+      {
+       "name": "sign in",
+       "index": 2
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Type 'sign in'",
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      },
+      {
+       "name": "thick arrow",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      },
+      {
+       "name": "thick arrow",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'thick arrow'",
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 2",
+       "index": 3
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 2",
+       "index": 3
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Rectangle 2'",
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Footer",
+       "index": 6
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 4
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Footer",
+       "index": 6
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 4
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 1'",
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 2",
+       "index": 3
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 2",
+       "index": 3
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 2'",
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "masks__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Header",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Header'",
+   "psd": "psds/psd-tools/masks.psd",
+   "file": "masks"
+  },
+  {
+   "id": "layer-effects__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/layer_effects.psd",
+   "file": "layer-effects"
+  },
+  {
+   "id": "layer-effects__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Gradient Overlay",
+       "index": 3
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Type",
+   "psd": "psds/psd-tools/layer_effects.psd",
+   "file": "layer-effects"
+  },
+  {
+   "id": "layer-effects__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Satin",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Bevel",
+       "index": 10
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/layer_effects.psd",
+   "file": "layer-effects"
+  },
+  {
+   "id": "layer-effects__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Bevel",
+       "index": 10
+      }
+     ],
+     "target": [
+      {
+       "name": "Satin",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/layer_effects.psd",
+   "file": "layer-effects"
+  },
+  {
+   "id": "layer-effects__rasterize-type",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Satin",
+       "index": 0
+      }
+     ],
+     "what": "type"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Satin",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Type 'Satin'",
+   "psd": "psds/psd-tools/layer_effects.psd",
+   "file": "layer-effects"
+  },
+  {
+   "id": "layer-effects__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Satin",
+       "index": 0
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Satin",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Type 'Satin'",
+   "psd": "psds/psd-tools/layer_effects.psd",
+   "file": "layer-effects"
+  },
+  {
+   "id": "layer-effects__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Gradient Overlay",
+       "index": 3
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Gradient Overlay",
+       "index": 3
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Type 'Gradient Overlay'",
+   "psd": "psds/psd-tools/layer_effects.psd",
+   "file": "layer-effects"
+  },
+  {
+   "id": "blend-and-clipping__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-and-clipping.psd",
+   "file": "blend-and-clipping"
+  },
+  {
+   "id": "blend-and-clipping__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Rectangle 2 copy 3",
+       "index": 1
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/blend-and-clipping.psd",
+   "file": "blend-and-clipping"
+  },
+  {
+   "id": "blend-and-clipping__rasterize-type",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "interior",
+       "index": 0
+      }
+     ],
+     "what": "type"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "Type 'interior'",
+   "psd": "psds/psd-tools/blend-and-clipping.psd",
+   "file": "blend-and-clipping"
+  },
+  {
+   "id": "blend-and-clipping__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Rectangle 2 copy 3",
+       "index": 1
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "Shape 'Rectangle 2 copy 3'",
+   "psd": "psds/psd-tools/blend-and-clipping.psd",
+   "file": "blend-and-clipping"
+  },
+  {
+   "id": "blend-and-clipping__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Rectangle 2 copy 3",
+       "index": 1
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "Shape 'Rectangle 2 copy 3'",
+   "psd": "psds/psd-tools/blend-and-clipping.psd",
+   "file": "blend-and-clipping"
+  },
+  {
+   "id": "blend-and-clipping__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rectangle 1 copy 3",
+       "index": 2
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rectangle 1 copy 3",
+       "index": 2
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 1 copy 3'",
+   "psd": "psds/psd-tools/blend-and-clipping.psd",
+   "file": "blend-and-clipping"
+  },
+  {
+   "id": "placedLayer__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/placedLayer.psd",
+   "file": "placedLayer"
+  },
+  {
+   "id": "placedLayer__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "linked-psd",
+       "index": 1
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Smart Object",
+   "psd": "psds/psd-tools/placedLayer.psd",
+   "file": "placedLayer"
+  },
+  {
+   "id": "placedLayer__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "embedded-png",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "linked-png",
+       "index": 2
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/placedLayer.psd",
+   "file": "placedLayer"
+  },
+  {
+   "id": "placedLayer__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "linked-png",
+       "index": 2
+      }
+     ],
+     "target": [
+      {
+       "name": "embedded-png",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/placedLayer.psd",
+   "file": "placedLayer"
+  },
+  {
+   "id": "placedLayer__rasterize-smartObject",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "embedded-png",
+       "index": 0
+      }
+     ],
+     "what": "smartObject"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "embedded-png",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Smart Object 'embedded-png'",
+   "psd": "psds/psd-tools/placedLayer.psd",
+   "file": "placedLayer"
+  },
+  {
+   "id": "placedLayer__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "linked-psd",
+       "index": 1
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "linked-psd",
+       "index": 1
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Smart Object 'linked-psd'",
+   "psd": "psds/psd-tools/placedLayer.psd",
+   "file": "placedLayer"
+  },
+  {
+   "id": "smart-object-slice__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "file": "smart-object-slice"
+  },
+  {
+   "id": "smart-object-slice__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "file": "smart-object-slice"
+  },
+  {
+   "id": "smart-object-slice__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "file": "smart-object-slice"
+  },
+  {
+   "id": "smart-object-slice__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "file": "smart-object-slice"
+  },
+  {
+   "id": "smart-object-slice__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Shape 2'",
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "file": "smart-object-slice"
+  },
+  {
+   "id": "smart-object-slice__rasterize-smartObject",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "what": "smartObject"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Smart Object 'Shape 1'",
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "file": "smart-object-slice"
+  },
+  {
+   "id": "smart-object-slice__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 2",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Shape 2'",
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "file": "smart-object-slice"
+  },
+  {
+   "id": "smart-object-slice__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Shape 1",
+       "index": 1
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Smart Object 'Shape 1'",
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "file": "smart-object-slice"
+  },
+  {
+   "id": "smart-object-slice__slices",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "slices",
+     "type": "slices",
+     "slices": [
+      {
+       "number": 3,
+       "name": "smart-object-slice_03",
+       "rect": [
+        51,
+        10,
+        33,
+        50
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "rects from the PSD's slice resource; PS crops its own composite to them",
+   "psd": "psds/psd-tools/smart-object-slice.psd",
+   "file": "smart-object-slice"
+  },
+  {
+   "id": "slices__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/slices.psd",
+   "file": "slices"
+  },
+  {
+   "id": "slices__slices",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "slices",
+     "type": "slices",
+     "slices": [
+      {
+       "number": 3,
+       "name": "Slice 1",
+       "rect": [
+        23,
+        18,
+        68,
+        61
+       ]
+      },
+      {
+       "number": 6,
+       "name": "slices_06",
+       "rect": [
+        133,
+        70,
+        68,
+        68
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "rects from the PSD's slice resource; PS crops its own composite to them",
+   "psd": "psds/psd-tools/slices.psd",
+   "file": "slices"
+  },
+  {
+   "id": "layers-minimal-type-layer__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/layers-minimal/type-layer.psd",
+   "file": "layers-minimal-type-layer"
+  },
+  {
+   "id": "layers-minimal-type-layer__rasterize-type",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "A",
+       "index": 0
+      }
+     ],
+     "what": "type"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "A",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Type 'A'",
+   "psd": "psds/psd-tools/layers-minimal/type-layer.psd",
+   "file": "layers-minimal-type-layer"
+  },
+  {
+   "id": "layers-minimal-type-layer__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "A",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "A",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Type 'A'",
+   "psd": "psds/psd-tools/layers-minimal/type-layer.psd",
+   "file": "layers-minimal-type-layer"
+  },
+  {
+   "id": "layers-minimal-shape-layer__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/layers-minimal/shape-layer.psd",
+   "file": "layers-minimal-shape-layer"
+  },
+  {
+   "id": "layers-minimal-shape-layer__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Polygon 1",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Polygon 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Polygon 1'",
+   "psd": "psds/psd-tools/layers-minimal/shape-layer.psd",
+   "file": "layers-minimal-shape-layer"
+  },
+  {
+   "id": "layers-minimal-shape-layer__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Polygon 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Polygon 1",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Polygon 1'",
+   "psd": "psds/psd-tools/layers-minimal/shape-layer.psd",
+   "file": "layers-minimal-shape-layer"
+  },
+  {
+   "id": "layers-minimal-smartobject-layer__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/layers-minimal/smartobject-layer.psd",
+   "file": "layers-minimal-smartobject-layer"
+  },
+  {
+   "id": "layers-minimal-smartobject-layer__rasterize-smartObject",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Smart object",
+       "index": 0
+      }
+     ],
+     "what": "smartObject"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Smart object",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Smart Object 'Smart object'",
+   "psd": "psds/psd-tools/layers-minimal/smartobject-layer.psd",
+   "file": "layers-minimal-smartobject-layer"
+  },
+  {
+   "id": "layers-minimal-smartobject-layer__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Smart object",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Smart object",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Smart Object 'Smart object'",
+   "psd": "psds/psd-tools/layers-minimal/smartobject-layer.psd",
+   "file": "layers-minimal-smartobject-layer"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "file": "transparency-knockout-isolated-groups"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Rectangle 4",
+       "index": 1
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "file": "transparency-knockout-isolated-groups"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Non-isolated, Non-knockout",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Rectangle 1",
+       "index": 7
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "file": "transparency-knockout-isolated-groups"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Rectangle 1",
+       "index": 7
+      }
+     ],
+     "target": [
+      {
+       "name": "Non-isolated, Non-knockout",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "file": "transparency-knockout-isolated-groups"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups__moveInto",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Rectangle 4",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Non-isolated, Non-knockout",
+       "index": 0
+      }
+     ],
+     "position": "into"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "into = top of the group (Photoshop drop-on-group)",
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "file": "transparency-knockout-isolated-groups"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Non-isolated, Non-knockout",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 4",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Non-isolated, Non-knockout",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 4",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Ellipse 4'",
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "file": "transparency-knockout-isolated-groups"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rectangle 4",
+       "index": 1
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rectangle 4",
+       "index": 1
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 4'",
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "file": "transparency-knockout-isolated-groups"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Non-isolated, Non-knockout",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 4",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Non-isolated, Non-knockout",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 4",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Ellipse 4'",
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "file": "transparency-knockout-isolated-groups"
+  },
+  {
+   "id": "transparency-knockout-isolated-groups__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Non-isolated, Non-knockout",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Non-isolated, Non-knockout'",
+   "psd": "psds/psd-tools/transparency/knockout-isolated-groups.psd",
+   "file": "transparency-knockout-isolated-groups"
+  },
+  {
+   "id": "transparency-transparency-group__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/transparency/transparency-group.psd",
+   "file": "transparency-transparency-group"
+  },
+  {
+   "id": "transparency-transparency-group__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Transparency group, Object opacity=0.5, Group opacity=1.0, HardLight",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd-tools/transparency/transparency-group.psd",
+   "file": "transparency-transparency-group"
+  },
+  {
+   "id": "transparency-transparency-group__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Transparency group, Object opacity=0.5, Group opacity=1.0, HardLight",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Ungrouped objects, Object opacity=1.0",
+       "index": 3
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/transparency/transparency-group.psd",
+   "file": "transparency-transparency-group"
+  },
+  {
+   "id": "transparency-transparency-group__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Ungrouped objects, Object opacity=1.0",
+       "index": 3
+      }
+     ],
+     "target": [
+      {
+       "name": "Transparency group, Object opacity=0.5, Group opacity=1.0, HardLight",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/transparency/transparency-group.psd",
+   "file": "transparency-transparency-group"
+  },
+  {
+   "id": "transparency-transparency-group__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Transparency group, Object opacity=0.5, Group opacity=1.0, HardLight",
+       "index": 0
+      },
+      {
+       "name": "Transparency Group 2",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 1 copy 9",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Transparency group, Object opacity=0.5, Group opacity=1.0, HardLight",
+       "index": 0
+      },
+      {
+       "name": "Transparency Group 2",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 1 copy 9",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Ellipse 1 copy 9'",
+   "psd": "psds/psd-tools/transparency/transparency-group.psd",
+   "file": "transparency-transparency-group"
+  },
+  {
+   "id": "transparency-transparency-group__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Transparency group, Object opacity=0.5, Group opacity=1.0, HardLight",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1 copy 3",
+       "index": 2
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Transparency group, Object opacity=0.5, Group opacity=1.0, HardLight",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1 copy 3",
+       "index": 2
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 1 copy 3'",
+   "psd": "psds/psd-tools/transparency/transparency-group.psd",
+   "file": "transparency-transparency-group"
+  },
+  {
+   "id": "transparency-transparency-group__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Transparency group, Object opacity=1.0, Group opacity=0.5, Normal",
+       "index": 1
+      },
+      {
+       "name": "Rectangle 1 copy 2",
+       "index": 2
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Transparency group, Object opacity=1.0, Group opacity=0.5, Normal",
+       "index": 1
+      },
+      {
+       "name": "Rectangle 1 copy 2",
+       "index": 2
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 1 copy 2'",
+   "psd": "psds/psd-tools/transparency/transparency-group.psd",
+   "file": "transparency-transparency-group"
+  },
+  {
+   "id": "transparency-transparency-group__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Transparency group, Object opacity=0.5, Group opacity=1.0, HardLight",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Transparency group, Object opacity=0.5, Group opacity=1.0, HardLight'",
+   "psd": "psds/psd-tools/transparency/transparency-group.psd",
+   "file": "transparency-transparency-group"
+  },
+  {
+   "id": "effects-shape-fx__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/effects/shape-fx.psd",
+   "file": "effects-shape-fx"
+  },
+  {
+   "id": "effects-shape-fx__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Color Fill 1",
+       "index": 1
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd-tools/effects/shape-fx.psd",
+   "file": "effects-shape-fx"
+  },
+  {
+   "id": "effects-shape-fx__moveInto",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Color Fill 1",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Group 1",
+       "index": 0
+      }
+     ],
+     "position": "into"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "into = top of the group (Photoshop drop-on-group)",
+   "psd": "psds/psd-tools/effects/shape-fx.psd",
+   "file": "effects-shape-fx"
+  },
+  {
+   "id": "effects-shape-fx__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Rectangle 1'",
+   "psd": "psds/psd-tools/effects/shape-fx.psd",
+   "file": "effects-shape-fx"
+  },
+  {
+   "id": "effects-shape-fx__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Color Fill 1",
+       "index": 1
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Color Fill 1",
+       "index": 1
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Color Fill 1'",
+   "psd": "psds/psd-tools/effects/shape-fx.psd",
+   "file": "effects-shape-fx"
+  },
+  {
+   "id": "effects-shape-fx__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 1'",
+   "psd": "psds/psd-tools/effects/shape-fx.psd",
+   "file": "effects-shape-fx"
+  },
+  {
+   "id": "effects-shape-fx__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Group 1'",
+   "psd": "psds/psd-tools/effects/shape-fx.psd",
+   "file": "effects-shape-fx"
+  },
+  {
+   "id": "effects-stroke-effects__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "file": "effects-stroke-effects"
+  },
+  {
+   "id": "effects-stroke-effects__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Paint styles",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "file": "effects-stroke-effects"
+  },
+  {
+   "id": "effects-stroke-effects__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Paint styles",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Alignment",
+       "index": 2
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "file": "effects-stroke-effects"
+  },
+  {
+   "id": "effects-stroke-effects__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Alignment",
+       "index": 2
+      }
+     ],
+     "target": [
+      {
+       "name": "Paint styles",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "file": "effects-stroke-effects"
+  },
+  {
+   "id": "effects-stroke-effects__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Paint styles",
+       "index": 0
+      },
+      {
+       "name": "Pattern",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Paint styles",
+       "index": 0
+      },
+      {
+       "name": "Pattern",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Pattern'",
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "file": "effects-stroke-effects"
+  },
+  {
+   "id": "effects-stroke-effects__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Paint styles",
+       "index": 0
+      },
+      {
+       "name": "Pattern",
+       "index": 0
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Paint styles",
+       "index": 0
+      },
+      {
+       "name": "Pattern",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Pattern'",
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "file": "effects-stroke-effects"
+  },
+  {
+   "id": "effects-stroke-effects__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Complex shapes",
+       "index": 1
+      },
+      {
+       "name": "Stroke InsetFrame",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Complex shapes",
+       "index": 1
+      },
+      {
+       "name": "Stroke InsetFrame",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Stroke InsetFrame'",
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "file": "effects-stroke-effects"
+  },
+  {
+   "id": "effects-stroke-effects__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Complex shapes",
+       "index": 1
+      },
+      {
+       "name": "Effect InsetFrame copy",
+       "index": 2
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Complex shapes",
+       "index": 1
+      },
+      {
+       "name": "Effect InsetFrame copy",
+       "index": 2
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Effect InsetFrame copy'",
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "file": "effects-stroke-effects"
+  },
+  {
+   "id": "effects-stroke-effects__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Paint styles",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Paint styles'",
+   "psd": "psds/psd-tools/effects/stroke-effects.psd",
+   "file": "effects-stroke-effects"
+  },
+  {
+   "id": "effects-blend-modes__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/effects/blend-modes.psd",
+   "file": "effects-blend-modes"
+  },
+  {
+   "id": "effects-blend-modes__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "bevel-modes",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd-tools/effects/blend-modes.psd",
+   "file": "effects-blend-modes"
+  },
+  {
+   "id": "effects-blend-modes__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "bevel-modes",
+       "index": 0
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "bevel-modes",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Pixel 'bevel-modes'",
+   "psd": "psds/psd-tools/effects/blend-modes.psd",
+   "file": "effects-blend-modes"
+  },
+  {
+   "id": "effects-blend-modes__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "bevel-modes",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "bevel-modes",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'bevel-modes'",
+   "psd": "psds/psd-tools/effects/blend-modes.psd",
+   "file": "effects-blend-modes"
+  },
+  {
+   "id": "effects-group-clips-child-stroke__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/effects/group-clips-child-stroke.psd",
+   "file": "effects-group-clips-child-stroke"
+  },
+  {
+   "id": "effects-group-clips-child-stroke__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Pass Through",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd-tools/effects/group-clips-child-stroke.psd",
+   "file": "effects-group-clips-child-stroke"
+  },
+  {
+   "id": "effects-group-clips-child-stroke__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Pass Through",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Outset",
+       "index": 2
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/effects/group-clips-child-stroke.psd",
+   "file": "effects-group-clips-child-stroke"
+  },
+  {
+   "id": "effects-group-clips-child-stroke__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Outset",
+       "index": 2
+      }
+     ],
+     "target": [
+      {
+       "name": "Pass Through",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/effects/group-clips-child-stroke.psd",
+   "file": "effects-group-clips-child-stroke"
+  },
+  {
+   "id": "effects-group-clips-child-stroke__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Pass Through",
+       "index": 0
+      },
+      {
+       "name": "Square C",
+       "index": 0
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Pass Through",
+       "index": 0
+      },
+      {
+       "name": "Square C",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Pixel 'Square C'",
+   "psd": "psds/psd-tools/effects/group-clips-child-stroke.psd",
+   "file": "effects-group-clips-child-stroke"
+  },
+  {
+   "id": "effects-group-clips-child-stroke__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Pass Through",
+       "index": 0
+      },
+      {
+       "name": "Square C",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Pass Through",
+       "index": 0
+      },
+      {
+       "name": "Square C",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Square C'",
+   "psd": "psds/psd-tools/effects/group-clips-child-stroke.psd",
+   "file": "effects-group-clips-child-stroke"
+  },
+  {
+   "id": "effects-group-clips-child-stroke__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Centered",
+       "index": 1
+      },
+      {
+       "name": "Square B",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Centered",
+       "index": 1
+      },
+      {
+       "name": "Square B",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Square B'",
+   "psd": "psds/psd-tools/effects/group-clips-child-stroke.psd",
+   "file": "effects-group-clips-child-stroke"
+  },
+  {
+   "id": "effects-group-clips-child-stroke__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Pass Through",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Pass Through'",
+   "psd": "psds/psd-tools/effects/group-clips-child-stroke.psd",
+   "file": "effects-group-clips-child-stroke"
+  },
+  {
+   "id": "adjustments-curves-rgb__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/adjustments/curves_rgb.psd",
+   "file": "adjustments-curves-rgb"
+  },
+  {
+   "id": "adjustments-curves-rgb__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "orion",
+       "index": 6
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd-tools/adjustments/curves_rgb.psd",
+   "file": "adjustments-curves-rgb"
+  },
+  {
+   "id": "adjustments-curves-rgb__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Curves 4",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "color palettes",
+       "index": 5
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/adjustments/curves_rgb.psd",
+   "file": "adjustments-curves-rgb"
+  },
+  {
+   "id": "adjustments-curves-rgb__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "color palettes",
+       "index": 5
+      }
+     ],
+     "target": [
+      {
+       "name": "Curves 4",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/adjustments/curves_rgb.psd",
+   "file": "adjustments-curves-rgb"
+  },
+  {
+   "id": "adjustments-curves-rgb__moveInto",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "orion",
+       "index": 6
+      }
+     ],
+     "target": [
+      {
+       "name": "masks",
+       "index": 4
+      }
+     ],
+     "position": "into"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "into = top of the group (Photoshop drop-on-group)",
+   "psd": "psds/psd-tools/adjustments/curves_rgb.psd",
+   "file": "adjustments-curves-rgb"
+  },
+  {
+   "id": "adjustments-curves-rgb__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "orion",
+       "index": 6
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "orion",
+       "index": 6
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'orion'",
+   "psd": "psds/psd-tools/adjustments/curves_rgb.psd",
+   "file": "adjustments-curves-rgb"
+  },
+  {
+   "id": "adjustments-curves-rgb__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "color palettes",
+       "index": 5
+      },
+      {
+       "name": "Layer 8 copy 3",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "color palettes",
+       "index": 5
+      },
+      {
+       "name": "Layer 8 copy 3",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Layer 8 copy 3'",
+   "psd": "psds/psd-tools/adjustments/curves_rgb.psd",
+   "file": "adjustments-curves-rgb"
+  },
+  {
+   "id": "adjustments-curves-rgb__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "color palettes",
+       "index": 5
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'color palettes'",
+   "psd": "psds/psd-tools/adjustments/curves_rgb.psd",
+   "file": "adjustments-curves-rgb"
+  },
+  {
+   "id": "adjustments-huesaturation-rgb__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/adjustments/huesaturation_rgb.psd",
+   "file": "adjustments-huesaturation-rgb"
+  },
+  {
+   "id": "adjustments-huesaturation-rgb__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "orion",
+       "index": 5
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd-tools/adjustments/huesaturation_rgb.psd",
+   "file": "adjustments-huesaturation-rgb"
+  },
+  {
+   "id": "adjustments-huesaturation-rgb__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Hue/Saturation 1",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "color palettes",
+       "index": 4
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/adjustments/huesaturation_rgb.psd",
+   "file": "adjustments-huesaturation-rgb"
+  },
+  {
+   "id": "adjustments-huesaturation-rgb__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "color palettes",
+       "index": 4
+      }
+     ],
+     "target": [
+      {
+       "name": "Hue/Saturation 1",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/adjustments/huesaturation_rgb.psd",
+   "file": "adjustments-huesaturation-rgb"
+  },
+  {
+   "id": "adjustments-huesaturation-rgb__moveInto",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "orion",
+       "index": 5
+      }
+     ],
+     "target": [
+      {
+       "name": "color palettes",
+       "index": 4
+      }
+     ],
+     "position": "into"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "into = top of the group (Photoshop drop-on-group)",
+   "psd": "psds/psd-tools/adjustments/huesaturation_rgb.psd",
+   "file": "adjustments-huesaturation-rgb"
+  },
+  {
+   "id": "adjustments-huesaturation-rgb__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "orion",
+       "index": 5
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "orion",
+       "index": 5
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'orion'",
+   "psd": "psds/psd-tools/adjustments/huesaturation_rgb.psd",
+   "file": "adjustments-huesaturation-rgb"
+  },
+  {
+   "id": "adjustments-huesaturation-rgb__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "color palettes",
+       "index": 4
+      },
+      {
+       "name": "Layer 8 copy 3",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "color palettes",
+       "index": 4
+      },
+      {
+       "name": "Layer 8 copy 3",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Layer 8 copy 3'",
+   "psd": "psds/psd-tools/adjustments/huesaturation_rgb.psd",
+   "file": "adjustments-huesaturation-rgb"
+  },
+  {
+   "id": "adjustments-huesaturation-rgb__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "color palettes",
+       "index": 4
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'color palettes'",
+   "psd": "psds/psd-tools/adjustments/huesaturation_rgb.psd",
+   "file": "adjustments-huesaturation-rgb"
+  },
+  {
+   "id": "fill-adjustments__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/fill_adjustments.psd",
+   "file": "fill-adjustments"
+  },
+  {
+   "id": "fill-adjustments__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Rectangle 3",
+       "index": 16
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/fill_adjustments.psd",
+   "file": "fill-adjustments"
+  },
+  {
+   "id": "fill-adjustments__show",
+   "ops": [
+    {
+     "op": "show",
+     "path": [
+      {
+       "name": "Gradient Map 1",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "show Adjustment",
+   "psd": "psds/psd-tools/fill_adjustments.psd",
+   "file": "fill-adjustments"
+  },
+  {
+   "id": "fill-adjustments__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Gradient Map 1",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Rectangle 1",
+       "index": 18
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/fill_adjustments.psd",
+   "file": "fill-adjustments"
+  },
+  {
+   "id": "fill-adjustments__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Rectangle 1",
+       "index": 18
+      }
+     ],
+     "target": [
+      {
+       "name": "Gradient Map 1",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/fill_adjustments.psd",
+   "file": "fill-adjustments"
+  },
+  {
+   "id": "fill-adjustments__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Rectangle 3",
+       "index": 16
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rectangle 3",
+       "index": 16
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Rectangle 3'",
+   "psd": "psds/psd-tools/fill_adjustments.psd",
+   "file": "fill-adjustments"
+  },
+  {
+   "id": "fill-adjustments__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Rectangle 3",
+       "index": 16
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rectangle 3",
+       "index": 16
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Rectangle 3'",
+   "psd": "psds/psd-tools/fill_adjustments.psd",
+   "file": "fill-adjustments"
+  },
+  {
+   "id": "fill-adjustments__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rectangle 3",
+       "index": 16
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rectangle 3",
+       "index": 16
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 3'",
+   "psd": "psds/psd-tools/fill_adjustments.psd",
+   "file": "fill-adjustments"
+  },
+  {
+   "id": "clipping-mask2__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/clipping-mask2.psd",
+   "file": "clipping-mask2"
+  },
+  {
+   "id": "clipping-mask2__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Polygon 1",
+       "index": 7
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/clipping-mask2.psd",
+   "file": "clipping-mask2"
+  },
+  {
+   "id": "clipping-mask2__show",
+   "ops": [
+    {
+     "op": "show",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "show Group",
+   "psd": "psds/psd-tools/clipping-mask2.psd",
+   "file": "clipping-mask2"
+  },
+  {
+   "id": "clipping-mask2__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Polygon 1",
+       "index": 7
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/clipping-mask2.psd",
+   "file": "clipping-mask2"
+  },
+  {
+   "id": "clipping-mask2__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Rounded Rectangle 3",
+       "index": 2
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rounded Rectangle 3",
+       "index": 2
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Rounded Rectangle 3'",
+   "psd": "psds/psd-tools/clipping-mask2.psd",
+   "file": "clipping-mask2"
+  },
+  {
+   "id": "clipping-mask2__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Polygon 1",
+       "index": 7
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Polygon 1",
+       "index": 7
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Polygon 1'",
+   "psd": "psds/psd-tools/clipping-mask2.psd",
+   "file": "clipping-mask2"
+  },
+  {
+   "id": "clipping-mask2__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Polygon 1",
+       "index": 7
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Polygon 1",
+       "index": 7
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Polygon 1'",
+   "psd": "psds/psd-tools/clipping-mask2.psd",
+   "file": "clipping-mask2"
+  },
+  {
+   "id": "passthrough-blendmodes1__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/passthrough_blendmodes1.psd",
+   "file": "passthrough-blendmodes1"
+  },
+  {
+   "id": "passthrough-blendmodes1__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Layer 1",
+       "index": 3
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd-tools/passthrough_blendmodes1.psd",
+   "file": "passthrough-blendmodes1"
+  },
+  {
+   "id": "passthrough-blendmodes1__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Group 1 copy 2",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Layer 1",
+       "index": 3
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/passthrough_blendmodes1.psd",
+   "file": "passthrough-blendmodes1"
+  },
+  {
+   "id": "passthrough-blendmodes1__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Layer 1",
+       "index": 3
+      }
+     ],
+     "target": [
+      {
+       "name": "Group 1 copy 2",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/passthrough_blendmodes1.psd",
+   "file": "passthrough-blendmodes1"
+  },
+  {
+   "id": "passthrough-blendmodes1__moveInto",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Layer 1",
+       "index": 3
+      }
+     ],
+     "target": [
+      {
+       "name": "Group 1 copy 2",
+       "index": 0
+      }
+     ],
+     "position": "into"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "into = top of the group (Photoshop drop-on-group)",
+   "psd": "psds/psd-tools/passthrough_blendmodes1.psd",
+   "file": "passthrough-blendmodes1"
+  },
+  {
+   "id": "passthrough-blendmodes1__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1 copy 2",
+       "index": 0
+      },
+      {
+       "name": "Layer 1 copy",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1 copy 2",
+       "index": 0
+      },
+      {
+       "name": "Layer 1 copy",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Layer 1 copy'",
+   "psd": "psds/psd-tools/passthrough_blendmodes1.psd",
+   "file": "passthrough-blendmodes1"
+  },
+  {
+   "id": "passthrough-blendmodes1__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1 copy",
+       "index": 1
+      },
+      {
+       "name": "Layer 1 copy",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1 copy",
+       "index": 1
+      },
+      {
+       "name": "Layer 1 copy",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Layer 1 copy'",
+   "psd": "psds/psd-tools/passthrough_blendmodes1.psd",
+   "file": "passthrough-blendmodes1"
+  },
+  {
+   "id": "passthrough-blendmodes1__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1 copy 2",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Group 1 copy 2'",
+   "psd": "psds/psd-tools/passthrough_blendmodes1.psd",
+   "file": "passthrough-blendmodes1"
+  },
+  {
+   "id": "blend-modes-rgb-blend-modes__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/rgb-blend-modes.psd",
+   "file": "blend-modes-rgb-blend-modes"
+  },
+  {
+   "id": "blend-modes-rgb-blend-modes__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd-tools/blend-modes/rgb-blend-modes.psd",
+   "file": "blend-modes-rgb-blend-modes"
+  },
+  {
+   "id": "blend-modes-rgb-blend-modes__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      },
+      {
+       "name": "Dissolve",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      },
+      {
+       "name": "Dissolve",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Rectangle 1'",
+   "psd": "psds/psd-tools/blend-modes/rgb-blend-modes.psd",
+   "file": "blend-modes-rgb-blend-modes"
+  },
+  {
+   "id": "blend-modes-rgb-blend-modes__rasterize-smartObject",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      },
+      {
+       "name": "Dissolve",
+       "index": 0
+      },
+      {
+       "name": "rubber_duck_PNG1",
+       "index": 1
+      }
+     ],
+     "what": "smartObject"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      },
+      {
+       "name": "Dissolve",
+       "index": 0
+      },
+      {
+       "name": "rubber_duck_PNG1",
+       "index": 1
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Smart Object 'rubber_duck_PNG1'",
+   "psd": "psds/psd-tools/blend-modes/rgb-blend-modes.psd",
+   "file": "blend-modes-rgb-blend-modes"
+  },
+  {
+   "id": "blend-modes-rgb-blend-modes__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      },
+      {
+       "name": "Dissolve",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      },
+      {
+       "name": "Dissolve",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 1'",
+   "psd": "psds/psd-tools/blend-modes/rgb-blend-modes.psd",
+   "file": "blend-modes-rgb-blend-modes"
+  },
+  {
+   "id": "blend-modes-rgb-blend-modes__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      },
+      {
+       "name": "LigherColor",
+       "index": 1
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      },
+      {
+       "name": "LigherColor",
+       "index": 1
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 1'",
+   "psd": "psds/psd-tools/blend-modes/rgb-blend-modes.psd",
+   "file": "blend-modes-rgb-blend-modes"
+  },
+  {
+   "id": "blend-modes-rgb-blend-modes__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Rainbow in foreground, duck in background",
+       "index": 0
+      },
+      {
+       "name": "Dissolve",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Dissolve'",
+   "psd": "psds/psd-tools/blend-modes/rgb-blend-modes.psd",
+   "file": "blend-modes-rgb-blend-modes"
+  },
+  {
+   "id": "blend-modes-multiply__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/multiply.psd",
+   "file": "blend-modes-multiply"
+  },
+  {
+   "id": "blend-modes-multiply__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/blend-modes/multiply.psd",
+   "file": "blend-modes-multiply"
+  },
+  {
+   "id": "blend-modes-multiply__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Ellipse 2",
+       "index": 1
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/multiply.psd",
+   "file": "blend-modes-multiply"
+  },
+  {
+   "id": "blend-modes-multiply__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Ellipse 2",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/multiply.psd",
+   "file": "blend-modes-multiply"
+  },
+  {
+   "id": "blend-modes-multiply__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Ellipse 3'",
+   "psd": "psds/psd-tools/blend-modes/multiply.psd",
+   "file": "blend-modes-multiply"
+  },
+  {
+   "id": "blend-modes-soft-light__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/soft-light.psd",
+   "file": "blend-modes-soft-light"
+  },
+  {
+   "id": "blend-modes-soft-light__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/blend-modes/soft-light.psd",
+   "file": "blend-modes-soft-light"
+  },
+  {
+   "id": "blend-modes-soft-light__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Ellipse 2",
+       "index": 1
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/soft-light.psd",
+   "file": "blend-modes-soft-light"
+  },
+  {
+   "id": "blend-modes-soft-light__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Ellipse 2",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/soft-light.psd",
+   "file": "blend-modes-soft-light"
+  },
+  {
+   "id": "blend-modes-soft-light__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Ellipse 3'",
+   "psd": "psds/psd-tools/blend-modes/soft-light.psd",
+   "file": "blend-modes-soft-light"
+  },
+  {
+   "id": "blend-modes-color-dodge__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/color-dodge.psd",
+   "file": "blend-modes-color-dodge"
+  },
+  {
+   "id": "blend-modes-color-dodge__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/blend-modes/color-dodge.psd",
+   "file": "blend-modes-color-dodge"
+  },
+  {
+   "id": "blend-modes-color-dodge__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Ellipse 2",
+       "index": 1
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/color-dodge.psd",
+   "file": "blend-modes-color-dodge"
+  },
+  {
+   "id": "blend-modes-color-dodge__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Ellipse 2",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/color-dodge.psd",
+   "file": "blend-modes-color-dodge"
+  },
+  {
+   "id": "blend-modes-color-dodge__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Ellipse 3'",
+   "psd": "psds/psd-tools/blend-modes/color-dodge.psd",
+   "file": "blend-modes-color-dodge"
+  },
+  {
+   "id": "blend-modes-hue__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/hue.psd",
+   "file": "blend-modes-hue"
+  },
+  {
+   "id": "blend-modes-hue__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/blend-modes/hue.psd",
+   "file": "blend-modes-hue"
+  },
+  {
+   "id": "blend-modes-hue__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Ellipse 2",
+       "index": 1
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/hue.psd",
+   "file": "blend-modes-hue"
+  },
+  {
+   "id": "blend-modes-hue__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Ellipse 2",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/blend-modes/hue.psd",
+   "file": "blend-modes-hue"
+  },
+  {
+   "id": "blend-modes-hue__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Ellipse 3",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Ellipse 3'",
+   "psd": "psds/psd-tools/blend-modes/hue.psd",
+   "file": "blend-modes-hue"
+  },
+  {
+   "id": "mask-density-layervectormask__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/mask-density-layervectormask.psd",
+   "file": "mask-density-layervectormask"
+  },
+  {
+   "id": "mask-density-layervectormask__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Layer 1 copy 3",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd-tools/mask-density-layervectormask.psd",
+   "file": "mask-density-layervectormask"
+  },
+  {
+   "id": "mask-density-layervectormask__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Layer 1 copy 3",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Layer 1",
+       "index": 3
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/mask-density-layervectormask.psd",
+   "file": "mask-density-layervectormask"
+  },
+  {
+   "id": "mask-density-layervectormask__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Layer 1",
+       "index": 3
+      }
+     ],
+     "target": [
+      {
+       "name": "Layer 1 copy 3",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/mask-density-layervectormask.psd",
+   "file": "mask-density-layervectormask"
+  },
+  {
+   "id": "mask-density-layervectormask__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Layer 1 copy 3",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Layer 1 copy 3",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Layer 1 copy 3'",
+   "psd": "psds/psd-tools/mask-density-layervectormask.psd",
+   "file": "mask-density-layervectormask"
+  },
+  {
+   "id": "artboard__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/artboard.psd",
+   "file": "artboard"
+  },
+  {
+   "id": "artboard__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Artboard 1",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd-tools/artboard.psd",
+   "file": "artboard"
+  },
+  {
+   "id": "adjustment-fillers__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/adjustment-fillers.psd",
+   "file": "adjustment-fillers"
+  },
+  {
+   "id": "adjustment-fillers__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Color Fill 1",
+       "index": 4
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Shape",
+   "psd": "psds/psd-tools/adjustment-fillers.psd",
+   "file": "adjustment-fillers"
+  },
+  {
+   "id": "adjustment-fillers__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "TEXT",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Color Fill 1",
+       "index": 4
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/adjustment-fillers.psd",
+   "file": "adjustment-fillers"
+  },
+  {
+   "id": "adjustment-fillers__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Color Fill 1",
+       "index": 4
+      }
+     ],
+     "target": [
+      {
+       "name": "TEXT",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/adjustment-fillers.psd",
+   "file": "adjustment-fillers"
+  },
+  {
+   "id": "adjustment-fillers__rasterize-type",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "TEXT",
+       "index": 0
+      }
+     ],
+     "what": "type"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "TEXT",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Type 'TEXT'",
+   "psd": "psds/psd-tools/adjustment-fillers.psd",
+   "file": "adjustment-fillers"
+  },
+  {
+   "id": "adjustment-fillers__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Polygon 2",
+       "index": 2
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Polygon 2",
+       "index": 2
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Polygon 2'",
+   "psd": "psds/psd-tools/adjustment-fillers.psd",
+   "file": "adjustment-fillers"
+  },
+  {
+   "id": "adjustment-fillers__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Color Fill 1",
+       "index": 4
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Color Fill 1",
+       "index": 4
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Color Fill 1'",
+   "psd": "psds/psd-tools/adjustment-fillers.psd",
+   "file": "adjustment-fillers"
+  },
+  {
+   "id": "adjustment-fillers__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "TEXT",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "TEXT",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Type 'TEXT'",
+   "psd": "psds/psd-tools/adjustment-fillers.psd",
+   "file": "adjustment-fillers"
+  },
+  {
+   "id": "layer-comps__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Фон",
+       "index": 5
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__show",
+   "ops": [
+    {
+     "op": "show",
+     "path": [
+      {
+       "name": "Фигура 6",
+       "index": 3
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "show Shape",
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Mouth",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "Фигура 1",
+       "index": 4
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Фигура 1",
+       "index": 4
+      }
+     ],
+     "target": [
+      {
+       "name": "Mouth",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__moveInto",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Фигура 6",
+       "index": 3
+      }
+     ],
+     "target": [
+      {
+       "name": "Mouth",
+       "index": 0
+      }
+     ],
+     "position": "into"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "into = top of the group (Photoshop drop-on-group)",
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Mouth",
+       "index": 0
+      },
+      {
+       "name": "Фигура 5",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Mouth",
+       "index": 0
+      },
+      {
+       "name": "Фигура 5",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Фигура 5'",
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Mouth",
+       "index": 0
+      },
+      {
+       "name": "Фигура 5",
+       "index": 0
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Mouth",
+       "index": 0
+      },
+      {
+       "name": "Фигура 5",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Фигура 5'",
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Фон",
+       "index": 5
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Фон",
+       "index": 5
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Фон'",
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Фигура 1",
+       "index": 4
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Фигура 1",
+       "index": 4
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Фигура 1'",
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "layer-comps__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Mouth",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Mouth'",
+   "psd": "psds/psd-tools/layer_comps.psd",
+   "file": "layer-comps"
+  },
+  {
+   "id": "read-group-drop-shadows__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd/ag-psd/read/group-drop-shadows/src.psd",
+   "file": "read-group-drop-shadows"
+  },
+  {
+   "id": "read-group-drop-shadows__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd/ag-psd/read/group-drop-shadows/src.psd",
+   "file": "read-group-drop-shadows"
+  },
+  {
+   "id": "read-group-drop-shadows__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 1",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'Ellipse 1'",
+   "psd": "psds/psd/ag-psd/read/group-drop-shadows/src.psd",
+   "file": "read-group-drop-shadows"
+  },
+  {
+   "id": "read-group-drop-shadows__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 1
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Rectangle 1",
+       "index": 1
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Rectangle 1'",
+   "psd": "psds/psd/ag-psd/read/group-drop-shadows/src.psd",
+   "file": "read-group-drop-shadows"
+  },
+  {
+   "id": "read-group-drop-shadows__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      },
+      {
+       "name": "Ellipse 1",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Shape 'Ellipse 1'",
+   "psd": "psds/psd/ag-psd/read/group-drop-shadows/src.psd",
+   "file": "read-group-drop-shadows"
+  },
+  {
+   "id": "read-group-drop-shadows__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Group 1'",
+   "psd": "psds/psd/ag-psd/read/group-drop-shadows/src.psd",
+   "file": "read-group-drop-shadows"
+  },
+  {
+   "id": "read-write-text__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd/ag-psd/read-write/text/src.psd",
+   "file": "read-write-text"
+  },
+  {
+   "id": "read-write-text__rasterize-type",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "TEST",
+       "index": 0
+      }
+     ],
+     "what": "type"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "TEST",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Type 'TEST'",
+   "psd": "psds/psd/ag-psd/read-write/text/src.psd",
+   "file": "read-write-text"
+  },
+  {
+   "id": "read-write-text__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "TEST",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "TEST",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Type 'TEST'",
+   "psd": "psds/psd/ag-psd/read-write/text/src.psd",
+   "file": "read-write-text"
+  },
+  {
+   "id": "read-write-shapes__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd/ag-psd/read-write/shapes/src.psd",
+   "file": "read-write-shapes"
+  },
+  {
+   "id": "read-write-shapes__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "图层 0",
+       "index": 7
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd/ag-psd/read-write/shapes/src.psd",
+   "file": "read-write-shapes"
+  },
+  {
+   "id": "read-write-shapes__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "pin",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "矩形 1",
+       "index": 6
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd/ag-psd/read-write/shapes/src.psd",
+   "file": "read-write-shapes"
+  },
+  {
+   "id": "read-write-shapes__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "矩形 1",
+       "index": 6
+      }
+     ],
+     "target": [
+      {
+       "name": "pin",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd/ag-psd/read-write/shapes/src.psd",
+   "file": "read-write-shapes"
+  },
+  {
+   "id": "read-write-shapes__rasterize-shape",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "pin",
+       "index": 0
+      }
+     ],
+     "what": "shape"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "pin",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Shape 'pin'",
+   "psd": "psds/psd/ag-psd/read-write/shapes/src.psd",
+   "file": "read-write-shapes"
+  },
+  {
+   "id": "read-write-shapes__rasterize-smartObject",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "calendar",
+       "index": 1
+      }
+     ],
+     "what": "smartObject"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "calendar",
+       "index": 1
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Smart Object 'calendar'",
+   "psd": "psds/psd/ag-psd/read-write/shapes/src.psd",
+   "file": "read-write-shapes"
+  },
+  {
+   "id": "read-write-shapes__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "图层 0",
+       "index": 7
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "图层 0",
+       "index": 7
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel '图层 0'",
+   "psd": "psds/psd/ag-psd/read-write/shapes/src.psd",
+   "file": "read-write-shapes"
+  },
+  {
+   "id": "read-write-shapes__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "apple",
+       "index": 2
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "apple",
+       "index": 2
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Smart Object 'apple'",
+   "psd": "psds/psd/ag-psd/read-write/shapes/src.psd",
+   "file": "read-write-shapes"
+  },
+  {
+   "id": "read-write-float-color__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd/ag-psd/read-write/float-color/src.psd",
+   "file": "read-write-float-color"
+  },
+  {
+   "id": "read-write-float-color__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Layer 1",
+       "index": 2
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Pixel",
+   "psd": "psds/psd/ag-psd/read-write/float-color/src.psd",
+   "file": "read-write-float-color"
+  },
+  {
+   "id": "read-write-float-color__moveBelow",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "Layer 2",
+       "index": 0
+      }
+     ],
+     "target": [
+      {
+       "name": "outer glow",
+       "index": 1
+      }
+     ],
+     "position": "below"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd/ag-psd/read-write/float-color/src.psd",
+   "file": "read-write-float-color"
+  },
+  {
+   "id": "read-write-float-color__moveAbove",
+   "ops": [
+    {
+     "op": "move",
+     "path": [
+      {
+       "name": "outer glow",
+       "index": 1
+      }
+     ],
+     "target": [
+      {
+       "name": "Layer 2",
+       "index": 0
+      }
+     ],
+     "position": "above"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd/ag-psd/read-write/float-color/src.psd",
+   "file": "read-write-float-color"
+  },
+  {
+   "id": "read-write-float-color__rasterize-type",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "outer glow",
+       "index": 1
+      }
+     ],
+     "what": "type"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "outer glow",
+       "index": 1
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Type 'outer glow'",
+   "psd": "psds/psd/ag-psd/read-write/float-color/src.psd",
+   "file": "read-write-float-color"
+  },
+  {
+   "id": "read-write-float-color__rasterize-layerStyle",
+   "ops": [
+    {
+     "op": "rasterize",
+     "path": [
+      {
+       "name": "outer glow",
+       "index": 1
+      }
+     ],
+     "what": "layerStyle"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    },
+    {
+     "name": "layer",
+     "type": "layer",
+     "path": [
+      {
+       "name": "outer glow",
+       "index": 1
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "Type 'outer glow'",
+   "psd": "psds/psd/ag-psd/read-write/float-color/src.psd",
+   "file": "read-write-float-color"
+  },
+  {
+   "id": "read-write-float-color__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Layer 1",
+       "index": 2
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Layer 1",
+       "index": 2
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Layer 1'",
+   "psd": "psds/psd/ag-psd/read-write/float-color/src.psd",
+   "file": "read-write-float-color"
+  },
+  {
+   "id": "read-write-float-color__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "outer glow",
+       "index": 1
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "outer glow",
+       "index": 1
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Type 'outer glow'",
+   "psd": "psds/psd/ag-psd/read-write/float-color/src.psd",
+   "file": "read-write-float-color"
+  },
+  {
+   "id": "read-write-group-blend__render",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "psd": "psds/psd/ag-psd/read-write/group-blend/src.psd",
+   "file": "read-write-group-blend"
+  },
+  {
+   "id": "read-write-group-blend__hide",
+   "ops": [
+    {
+     "op": "hide",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      }
+     ]
+    }
+   ],
+   "outputs": [
+    {
+     "name": "canvas",
+     "type": "canvas"
+    }
+   ],
+   "note": "hide Group",
+   "psd": "psds/psd/ag-psd/read-write/group-blend/src.psd",
+   "file": "read-write-group-blend"
+  },
+  {
+   "id": "read-write-group-blend__exportLayer",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      },
+      {
+       "name": "Layer 2",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      },
+      {
+       "name": "Layer 2",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Layer 2'",
+   "psd": "psds/psd/ag-psd/read-write/group-blend/src.psd",
+   "file": "read-write-group-blend"
+  },
+  {
+   "id": "read-write-group-blend__exportLayer2",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "trimmed",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 1
+      },
+      {
+       "name": "Layer 1",
+       "index": 0
+      }
+     ],
+     "trim": true
+    },
+    {
+     "name": "full",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 1",
+       "index": 1
+      },
+      {
+       "name": "Layer 1",
+       "index": 0
+      }
+     ],
+     "trim": false
+    }
+   ],
+   "note": "Pixel 'Layer 1'",
+   "psd": "psds/psd/ag-psd/read-write/group-blend/src.psd",
+   "file": "read-write-group-blend"
+  },
+  {
+   "id": "read-write-group-blend__exportGroup",
+   "ops": [],
+   "outputs": [
+    {
+     "name": "group",
+     "type": "layer",
+     "path": [
+      {
+       "name": "Group 2",
+       "index": 0
+      }
+     ],
+     "trim": true
+    }
+   ],
+   "note": "group 'Group 2'",
+   "psd": "psds/psd/ag-psd/read-write/group-blend/src.psd",
+   "file": "read-write-group-blend"
+  }
+ ]
+}
