@@ -228,6 +228,17 @@ function savePng(doc, path) {
     return r;
 }
 
+// Save `doc` as a layered PSD copy (Photoshop's own encoding of the probe, re-rendered on the box).
+function savePsd(doc, path) {
+    app.activeDocument = doc;
+    var o = new PhotoshopSaveOptions();
+    o.layers = true;
+    o.embedColorProfile = true;
+    try { o.alphaChannels = true; } catch (e) {}
+    try { o.spotColors = true; } catch (e) {}
+    doc.saveAs(new File(path), o, true, Extension.LOWERCASE);
+}
+
 // Duplicate Layer > Destination: New document (AM `make document using layer`, target form).
 // Returns the new document; it is closed again here if anything after its creation fails.
 function dupLayerToNewDoc(doc, layer, warnings) {
@@ -270,22 +281,45 @@ function unionBounds(nd) {
     return (b[2] > b[0] && b[3] > b[1]) ? b : null;
 }
 
+// Trim a "make document using layer" document to its content. Fallbacks, in order: a linked
+// smart object whose file is missing makes trim AND crop refuse ("缺少链接的智能对象文件"), so
+// rasterize the (temporary) copy and trim again; then crop to the layer bounds; then keep the
+// whole canvas and say so (res.untrimmed = true, the comparison reports it as SIZE).
+function trimLayerDoc(nd, spec, res, warnings) {
+    var errs = [];
+    try { nd.trim(TrimType.TRANSPARENT, true, true, true, true); res.method += " + trim transparent"; return; }
+    catch (e) { errs.push("trim: " + e); }
+    try {
+        app.activeDocument = nd;
+        selectById(layerId(nd.layers[0]));
+        var d = new ActionDescriptor();
+        d.putReference(cTID("null"), refTarget());
+        d.putEnumerated(sTID("what"), sTID("rasterizeItem"), sTID("placed"));
+        executeAction(sTID("rasterizeLayer"), d, DialogModes.NO);
+        nd.trim(TrimType.TRANSPARENT, true, true, true, true);
+        warnings.push(spec.name + ": trim refused (" + errs[0] + "); rasterized the copy's smart object, then trimmed");
+        res.method += " + rasterize placed (copy) + trim transparent";
+        return;
+    } catch (e2) { errs.push("rasterize+trim: " + e2); }
+    try {
+        var b = unionBounds(nd);
+        if (!b) throw new Error("layer bounds empty");
+        nd.crop(b);
+        warnings.push(spec.name + ": " + errs.join(" | ") + "; cropped to layer bounds");
+        res.method += " + crop to layer bounds";
+        return;
+    } catch (e3) { errs.push("crop: " + e3); }
+    warnings.push(spec.name + ": could not trim (" + errs.join(" | ") + "); saved the untrimmed canvas");
+    res.method += " (UNTRIMMED: trim, rasterize and crop all refused)";
+    res.untrimmed = true;
+}
+
 function outLayer(doc, spec, dir, res, warnings) {
     var layer = resolve(doc, spec.path, warnings);
     var nd = dupLayerToNewDoc(doc, layer, warnings);
     try {
         res.method = "make document using layer(target)";
-        if (spec.trim) {
-            try { nd.trim(TrimType.TRANSPARENT, true, true, true, true); res.method += " + trim transparent"; }
-            catch (e) {
-                // e.g. a linked smart object whose file is missing: trim refuses, crop to layer bounds instead
-                var b = unionBounds(nd);
-                if (!b) throw new Error("trim failed and layer bounds empty: " + e);
-                nd.crop(b);
-                warnings.push(spec.name + ": trim failed (" + e + "); cropped to layer bounds");
-                res.method += " + crop to layer bounds";
-            }
-        }
+        if (spec.trim) trimLayerDoc(nd, spec, res, warnings);
         var sz = savePng(nd, dir + "/" + spec.name + ".png");
         res.width = sz.width; res.height = sz.height;
     } finally {
@@ -323,6 +357,9 @@ function writeOutput(doc, spec, dir, warnings) {
             res.method = "save as PNG copy";
         } else if (spec.type === "layer") {
             outLayer(doc, spec, dir, res, warnings);
+        } else if (spec.type === "psd") {
+            savePsd(doc, dir + "/" + spec.name + ".psd");
+            res.method = "save as PSD copy (layers, maximize compatibility)";
         } else if (spec.type === "slices") {
             outSlices(doc, spec, dir, res, warnings);
         } else throw new Error("unknown output type " + spec.type);
@@ -356,6 +393,86 @@ function missingFonts(doc) {
     return miss;
 }
 
+// ---------------------------------------------------------------- build-from-scratch probes
+// A case with `build` instead of `psd` makes its document in Photoshop:
+//   build = { "new": {"width","height","fill":"white|transparent"} | "open": "<bundle-relative image>",
+//             "steps": [ <action descriptor in batchPlay-like JSON>, ... ] }
+// A step is {"_obj": <event stringID>, key: value, ...} run with executeAction(…, DialogModes.NO).
+// Values: number → double, true/false → boolean, "s" → string, {"_int": n} → integer,
+// {"_unit": "pixelsUnit", "_value": v} → unit double, {"_enum": type, "_value": v} → enumerated,
+// {"_class": c} → class, {"_obj": c, ...} → object, [ ... ] → list, {"_path": rel} → path in the bundle,
+// {"_ref": c | [ {"_ref": c, "_enum"/"_value" | "_id" | "_name" | "_index" | "_property"}, ... ]} → reference.
+// Keys and ids are stringIDs; "#Abcd" is a charID; the key "null" is the charID "null".
+// Each step's outcome is recorded in the case's `steps` (a failed step fails the case).
+function amKey(k) { return (k === "null") ? cTID("null") : (k.charAt(0) === "#" ? cTID(k.substr(1)) : sTID(k)); }
+function amId(v) { return (v.charAt(0) === "#") ? cTID(v.substr(1)) : sTID(v); }
+function amRef(v) {
+    var r = new ActionReference();
+    var parts = (typeof v._ref === "string") ? [v] : v._ref;
+    for (var i = 0; i < parts.length; i++) {
+        var p = parts[i], c = amId(p._ref);
+        if (p._property !== undefined) r.putProperty(c, amId(p._property));
+        else if (p._enum !== undefined) r.putEnumerated(c, amId(p._enum), amId(p._value));
+        else if (p._id !== undefined) r.putIdentifier(c, p._id);
+        else if (p._index !== undefined) r.putIndex(c, p._index);
+        else if (p._name !== undefined) r.putName(c, p._name);
+        else if (p._offset !== undefined) r.putOffset(c, p._offset);
+        else r.putClass(c);
+    }
+    return r;
+}
+function amPut(target, isList, k, v, bundle) {
+    // target: an ActionDescriptor (key k) or an ActionList (k unused). Explicit calls, no
+    // Function.apply on host methods.
+    var t = typeof v, L = isList;
+    if (t === "number") { if (L) target.putDouble(v); else target.putDouble(k, v); return; }
+    if (t === "boolean") { if (L) target.putBoolean(v); else target.putBoolean(k, v); return; }
+    if (t === "string") { if (L) target.putString(v); else target.putString(k, v); return; }
+    if (v instanceof Array) { var l = amList(v, bundle); if (L) target.putList(l); else target.putList(k, l); return; }
+    if (v._ref !== undefined) { var r = amRef(v); if (L) target.putReference(r); else target.putReference(k, r); return; }  // before _enum: a reference may carry _enum
+    if (v._int !== undefined) { if (L) target.putInteger(v._int); else target.putInteger(k, v._int); return; }
+    if (v._unit !== undefined) { if (L) target.putUnitDouble(amId(v._unit), v._value); else target.putUnitDouble(k, amId(v._unit), v._value); return; }
+    if (v._enum !== undefined) { if (L) target.putEnumerated(amId(v._enum), amId(v._value)); else target.putEnumerated(k, amId(v._enum), amId(v._value)); return; }
+    if (v._class !== undefined) { if (L) target.putClass(amId(v._class)); else target.putClass(k, amId(v._class)); return; }
+    if (v._path !== undefined) { var f = new File(bundle + "/" + v._path); if (L) target.putPath(f); else target.putPath(k, f); return; }
+    if (v._obj !== undefined) { var d = amDesc(v, bundle); if (L) target.putObject(amId(v._obj), d); else target.putObject(k, amId(v._obj), d); return; }
+    throw new Error("am: cannot encode " + jsonStr(v));
+}
+function amDesc(o, bundle) {
+    var d = new ActionDescriptor();
+    for (var k in o) if (o.hasOwnProperty(k) && k !== "_obj" && k.charAt(0) !== "$") amPut(d, false, amKey(k), o[k], bundle);
+    return d;
+}
+function amList(a, bundle) {
+    var l = new ActionList();
+    for (var i = 0; i < a.length; i++) amPut(l, true, null, a[i], bundle);
+    return l;
+}
+function buildDoc(bundle, b, r) {
+    var doc;
+    if (b.open) {
+        doc = app.open(new File(bundle + "/" + b.open));
+    } else {
+        var n = b["new"];
+        doc = app.documents.add(n.width, n.height, 72, "probe", NewDocumentMode.RGB,
+                                n.fill === "transparent" ? DocumentFill.TRANSPARENT : DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT, "sRGB IEC61966-2.1");
+    }
+    app.activeDocument = doc;
+    r.steps = [];
+    var steps = b.steps || [];
+    for (var i = 0; i < steps.length; i++) {
+        var st = steps[i];
+        try {
+            executeAction(amId(st._obj), amDesc(st, bundle), DialogModes.NO);
+            r.steps.push({ step: i, event: st._obj, note: st.$note || null, ok: true });
+        } catch (e) {
+            r.steps.push({ step: i, event: st._obj, note: st.$note || null, ok: false, error: String(e) });
+            throw new Error("build step " + i + " (" + st._obj + (st.$note ? " " + st.$note : "") + ") failed: " + e);
+        }
+    }
+    return doc;
+}
+
 // ---------------------------------------------------------------- main
 function closeExtra(keep) {
     for (var guard = 0; guard < 50 && app.documents.length > 0; guard++) {
@@ -376,9 +493,13 @@ function runCase(bundle, out, c) {
     var keep = [];
     for (var i = 0; i < app.documents.length; i++) keep.push(app.documents[i]);
     try {
-        var f = new File(bundle + "/" + c.psd);
-        if (!f.exists) throw new Error("missing " + f.fsName);
-        var doc = app.open(f);
+        var doc;
+        if (c.build) doc = buildDoc(bundle, c.build, r);
+        else {
+            var f = new File(bundle + "/" + c.psd);
+            if (!f.exists) throw new Error("missing " + f.fsName);
+            doc = app.open(f);
+        }
         app.activeDocument = doc;
         r.docMode = String(doc.mode);
         r.docBits = String(doc.bitsPerChannel);
@@ -421,7 +542,9 @@ function main() {
     if (doneF.exists) doneF.remove();
 
     var manifest = jsonParse(readText(bundle + "/cases.json"));
-    var saved = { ruler: app.preferences.rulerUnits, type: app.preferences.typeUnits, dialogs: app.displayDialogs };
+    var saved = { ruler: app.preferences.rulerUnits, type: app.preferences.typeUnits, dialogs: app.displayDialogs, compat: null };
+    // Probe PSDs are re-read on the box: keep the composite (maximize compatibility) in them.
+    try { saved.compat = app.preferences.maximizeCompatibility; app.preferences.maximizeCompatibility = QueryStateType.ALWAYS; } catch (e) { saved.compat = null; }
     app.preferences.rulerUnits = Units.PIXELS;
     app.preferences.typeUnits = TypeUnits.PIXELS;
     app.displayDialogs = DialogModes.NO;
@@ -445,6 +568,7 @@ function main() {
         app.preferences.rulerUnits = saved.ruler;
         app.preferences.typeUnits = saved.type;
         app.displayDialogs = saved.dialogs;
+        if (saved.compat !== null) { try { app.preferences.maximizeCompatibility = saved.compat; } catch (e) {} }
     }
     results.env.finished = new Date().toString();
     writeText(out + "/results.json", jsonStr(results) + "\n");
