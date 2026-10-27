@@ -22,7 +22,7 @@ let nextId = 100000;
 
 function mkLayer(j, parent) {
   const isSet = j.kind === 'Group';
-  const l = { name: j.name, id: j.id, typename: isSet ? 'LayerSet' : 'ArtLayer', visible: j.visible, parent,
+  const l = { name: j.name, id: j.id, isBackgroundLayer: !!j.isBackground, bounds: (j.bounds || [0, 0, 1, 1]).map((v, i, b) => unit(i < 2 ? v : b[i - 2] + v)), typename: isSet ? 'LayerSet' : 'ArtLayer', visible: j.visible, parent,
     kind: j.kind === 'Type' ? 'TEXT' : 'NORMAL', layers: [] };
   if (j.kind === 'Type') l.textItem = { font: 'ArialMT' };
   if (isSet) l.layers = j.children.map(c => mkLayer(c, l));
@@ -86,9 +86,13 @@ const ctx = {
   decodeURI,
   executeAction(ev, d) {
     const doc = active;
-    if (ev === 's:rasterizeLayer') { const l = findId(doc.layers, d.v['c:null'].id); if (!l) throw new Error('mock: no layer ' + d.v['c:null'].id); log.push('am rasterize ' + l.name + ' ' + d.v['s:what']); return; }
-    if (ev === 'c:Mk  ') { const r = d.v['c:Usng']; const l = findId(doc.layers, r.id); if (!l) throw new Error('mock: no layer'); mkDoc('pso-layer', doc.width.as(), doc.height.as(), [mkLayer({ name: l.name, id: nextId++, kind: 'Pixel', visible: l.visible }, null)]); return; }
-    if (ev === 'c:slct') return;
+    // Real PS 27.5 behaviour: rasterizeLayer / make-document-using-layer act on the TARGET
+    // (selected) layer and ignore identifier references; only `slct` honours an id.
+    const tgt = (r) => { if (!r || !r.target) throw new Error('mock: PS 27.5 ignores id refs here; use target'); if (!doc.activeLayer) throw new Error('mock: nothing selected'); return doc.activeLayer; };
+    if (ev === 's:rasterizeLayer') { const l = tgt(d.v['c:null']); log.push('am rasterize ' + l.name + ' ' + d.v['s:what']); return; }
+    if (ev === 's:rasterizePlaced') { log.push('am rasterizePlaced ' + doc.activeLayer.name); return; }
+    if (ev === 'c:Mk  ') { const l = tgt(d.v['c:Usng']); mkDoc('pso-layer', doc.width.as(), doc.height.as(), [mkLayer({ name: l.name, id: nextId++, kind: 'Pixel', visible: l.visible }, null)]); return; }
+    if (ev === 'c:slct') { const l = findId(doc.layers, d.v['c:null'].id); if (!l) throw new Error('mock: select: no layer ' + d.v['c:null'].id); doc.activeLayer = l; return; }
     throw new Error('mock: unexpected event ' + ev);
   },
   app: {

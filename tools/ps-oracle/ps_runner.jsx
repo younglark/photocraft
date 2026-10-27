@@ -91,7 +91,11 @@ function resolve(doc, path, warnings) {
     for (var i = 0; i < path.length; i++) {
         var st = path[i], ls = cont.layers, cand = null;
         if (st.index < ls.length && ls[st.index].name === st.name) cand = ls[st.index];
-        else {
+        else if (cont === doc && st.index === ls.length - 1 && ls[st.index].isBackgroundLayer) {
+            // PS shows the Background layer under its localized name (e.g. "背景"), not the stored one ("Фон").
+            cand = ls[st.index];
+            warnings.push("path step '" + st.name + "' matched the Background layer by index (PS name '" + cand.name + "')");
+        } else {
             for (var j = 0; j < ls.length; j++) if (ls[j].name === st.name) { cand = ls[j]; break; }
             if (cand) warnings.push("path step '" + st.name + "' found by name, not at index " + st.index);
         }
@@ -117,7 +121,22 @@ function refById(id) {
     return r;
 }
 
+function refTarget() {
+    var r = new ActionReference();
+    r.putEnumerated(cTID("Lyr "), cTID("Ordn"), cTID("Trgt"));
+    return r;
+}
+
 // Select a layer by id without making it visible (doc.activeLayer = x would show it).
+// NB: on PS 27.5 `rasterizeLayer` and `make document using layer` IGNORE an identifier
+// reference and act on the target (selected) layer, so every AM call selects first and
+// then uses the target-enum reference, exactly as ScriptListener records it.
+function selectLayer(doc, layer) {
+    app.activeDocument = doc;
+    selectById(layerId(layer));
+    var a = doc.activeLayer;
+    if (a.id !== layer.id) throw new Error("select failed: active layer is '" + a.name + "', wanted '" + layer.name + "'");
+}
 function selectById(id) {
     var d = new ActionDescriptor();
     d.putReference(cTID("null"), refById(id));
@@ -144,17 +163,25 @@ var RASTER_AM = { type: "type", shape: "shape", smartObject: "placed", layerStyl
 
 function opRasterize(doc, op, warnings) {
     var layer = resolve(doc, op.path, warnings);
-    var id = layerId(layer);
     var am = RASTER_AM[op.what];
     var err1 = null;
     if (am) {
         try {
+            selectLayer(doc, layer);
             var d = new ActionDescriptor();
-            d.putReference(cTID("null"), refById(id));
+            d.putReference(cTID("null"), refTarget());
             d.putEnumerated(sTID("what"), sTID("rasterizeItem"), sTID(am));
             executeAction(sTID("rasterizeLayer"), d, DialogModes.NO);
-            return "am rasterizeLayer what=" + am;
+            return "am rasterizeLayer(target) what=" + am;
         } catch (e) { err1 = String(e); }
+    }
+    if (op.what === "smartObject") {
+        try {
+            selectLayer(doc, layer);
+            executeAction(sTID("rasterizePlaced"), undefined, DialogModes.NO);
+            warnings.push("AM rasterizeLayer failed (" + err1 + "); used rasterizePlaced");
+            return "am rasterizePlaced";
+        } catch (e2) { err1 += " | rasterizePlaced: " + e2; }
     }
     // DOM fallback (needs the layer selected; DOM rasterize works on the object directly).
     var dom = { type: RasterizeType.TEXTCONTENTS, shape: RasterizeType.SHAPE, layer: RasterizeType.ENTIRELAYER, fillContent: RasterizeType.FILLCONTENT };
@@ -201,53 +228,66 @@ function savePng(doc, path) {
     return r;
 }
 
-// Duplicate Layer > Destination: New document (AM `make document using layer`).
+// Duplicate Layer > Destination: New document (AM `make document using layer`, target form).
+// Returns the new document; it is closed again here if anything after its creation fails.
 function dupLayerToNewDoc(doc, layer, warnings) {
-    var id = layerId(layer);
     var before = app.documents.length;
-    try {
-        var d = new ActionDescriptor();
-        var r = new ActionReference();
-        r.putClass(cTID("Dcmn"));
-        d.putReference(cTID("null"), r);
-        d.putString(cTID("Nm  "), "pso-layer");
-        d.putReference(cTID("Usng"), refById(id));
-        d.putInteger(cTID("Vrsn"), 5);
-        executeAction(cTID("Mk  "), d, DialogModes.NO);
-    } catch (e) {
-        // retry with the layer selected (target-enum form, exactly as ScriptListener records it)
-        warnings.push("make-document-using-layer by id failed: " + e + "; retrying with selection");
-        selectById(id);
-        var d2 = new ActionDescriptor();
-        var r2 = new ActionReference();
-        r2.putClass(cTID("Dcmn"));
-        d2.putReference(cTID("null"), r2);
-        d2.putString(cTID("Nm  "), "pso-layer");
-        var r3 = new ActionReference();
-        r3.putEnumerated(cTID("Lyr "), cTID("Ordn"), cTID("Trgt"));
-        d2.putReference(cTID("Usng"), r3);
-        d2.putInteger(cTID("Vrsn"), 5);
-        executeAction(cTID("Mk  "), d2, DialogModes.NO);
-    }
+    selectLayer(doc, layer);
+    var d = new ActionDescriptor();
+    var r = new ActionReference();
+    r.putClass(cTID("Dcmn"));
+    d.putReference(cTID("null"), r);
+    d.putString(cTID("Nm  "), "pso-layer");
+    d.putReference(cTID("Usng"), refTarget());
+    d.putInteger(cTID("Vrsn"), 5);
+    executeAction(cTID("Mk  "), d, DialogModes.NO);
     if (app.documents.length <= before) throw new Error("duplicate to new document made no document");
     var nd = app.activeDocument;
-    // the copied layer itself is shown (photocraft and PS quick-export render the layer even if hidden)
-    for (var i = 0; i < nd.layers.length; i++) nd.layers[i].visible = true;
+    try {
+        if (nd.layers.length !== 1 || nd.layers[0].name !== layer.name)
+            throw new Error("new document holds '" + (nd.layers.length ? nd.layers[0].name : "") + "' (" + nd.layers.length + " layers), wanted '" + layer.name + "'");
+        // the copied layer itself is shown (photocraft and PS quick-export render the layer even if hidden)
+        if (!nd.layers[0].visible) nd.layers[0].visible = true;
+    } catch (e) {
+        nd.close(SaveOptions.DONOTSAVECHANGES);
+        app.activeDocument = doc;
+        throw e;
+    }
     return nd;
 }
 
+function unionBounds(nd) {
+    var b = null;
+    for (var i = 0; i < nd.layers.length; i++) {
+        var l = nd.layers[i];
+        if (!l.visible) continue;
+        var x = [Number(l.bounds[0].as("px")), Number(l.bounds[1].as("px")), Number(l.bounds[2].as("px")), Number(l.bounds[3].as("px"))];
+        if (!b) b = x; else b = [Math.min(b[0], x[0]), Math.min(b[1], x[1]), Math.max(b[2], x[2]), Math.max(b[3], x[3])];
+    }
+    if (!b) return null;
+    var W = Number(nd.width.as("px")), H = Number(nd.height.as("px"));
+    b = [Math.max(0, b[0]), Math.max(0, b[1]), Math.min(W, b[2]), Math.min(H, b[3])];
+    return (b[2] > b[0] && b[3] > b[1]) ? b : null;
+}
 
 function outLayer(doc, spec, dir, res, warnings) {
     var layer = resolve(doc, spec.path, warnings);
     var nd = dupLayerToNewDoc(doc, layer, warnings);
     try {
+        res.method = "make document using layer(target)";
         if (spec.trim) {
-            try { nd.trim(TrimType.TRANSPARENT, true, true, true, true); }
-            catch (e) { throw new Error("trim failed (empty layer?): " + e); }
+            try { nd.trim(TrimType.TRANSPARENT, true, true, true, true); res.method += " + trim transparent"; }
+            catch (e) {
+                // e.g. a linked smart object whose file is missing: trim refuses, crop to layer bounds instead
+                var b = unionBounds(nd);
+                if (!b) throw new Error("trim failed and layer bounds empty: " + e);
+                nd.crop(b);
+                warnings.push(spec.name + ": trim failed (" + e + "); cropped to layer bounds");
+                res.method += " + crop to layer bounds";
+            }
         }
         var sz = savePng(nd, dir + "/" + spec.name + ".png");
         res.width = sz.width; res.height = sz.height;
-        res.method = "make document using layer" + (spec.trim ? " + trim transparent" : "");
     } finally {
         nd.close(SaveOptions.DONOTSAVECHANGES);
         app.activeDocument = doc;
