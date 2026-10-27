@@ -118,8 +118,9 @@ pub(super) fn offset(angle: f32, distance: f32) -> (f32, f32) {
     ((-a.cos() * distance).round(), (a.sin() * distance).round())
 }
 
-/// The lengths a 100 % gradient at `angle` spans in a `w` × `h` frame: the chord (Linear and
-/// Reflected) and the ellipse-norm length (Radial, Angle, Diamond; its half is the radius).
+/// The lengths a 100 % gradient at `angle` spans in a `w` × `h` frame: the chord (Linear,
+/// Reflected, Radial, Diamond — half is the radius) and the ellipse-norm length (kept for
+/// callers; Radial/Diamond no longer use it for `t`).
 pub fn gradient_units(angle: f32, w: f32, h: f32) -> (f32, f32) {
     let (s, c) = angle.to_radians().sin_cos();
     // Gradient length: the bounds' extent along the angle as an ellipse
@@ -146,8 +147,8 @@ pub fn gradient_t(style: GradientStyle, angle: f32, scale: f32, reverse: bool, o
     // Distance along the gradient direction (y axis points down).
     let along = dx * c - dy * s;
     let across = dx * s + dy * c;
-    let (chord, len) = gradient_units(angle, w, h);
-    let (chord, len) = (chord * scale.max(1e-3), len * scale.max(1e-3));
+    let (chord, _len) = gradient_units(angle, w, h);
+    let chord = chord * scale.max(1e-3);
     // Linear / Reflected sample the pixel's top-left corner, half a pixel before its centre
     // (with the whole-pixel end points of `fill_layout`: layer_effects' overlay 5.8 → 1.8/255,
     // shape-fx2 2.8 → 1.1/255, gradient-fill.psd 1.9 → 0.5/255).
@@ -155,8 +156,10 @@ pub fn gradient_t(style: GradientStyle, angle: f32, scale: f32, reverse: bool, o
     let mut t = match style {
         GradientStyle::Linear => (along - corner) / chord + 0.5,
         GradientStyle::Reflected => ((along - corner) / (chord / 2.0)).abs(),
-        GradientStyle::Radial => (dx * dx + dy * dy).sqrt() / (len / 2.0),
-        GradientStyle::Diamond => (along.abs() + across.abs()) / (len / 2.0),
+        // Radial stays Euclidean (circular); Diamond is Manhattan in the rotated frame.
+        // Both use the chord radius, not the ellipse-norm `len` (PS probe gov/gfill radial+diamond).
+        GradientStyle::Radial => (dx * dx + dy * dy).sqrt() / (chord / 2.0),
+        GradientStyle::Diamond => (along.abs() + across.abs()) / (chord / 2.0),
         // Clockwise sweep starting at the gradient angle.
         GradientStyle::Angle => ((angle.to_radians() - (-dy).atan2(dx)) / std::f32::consts::TAU).rem_euclid(1.0),
     };

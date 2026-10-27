@@ -40,17 +40,35 @@ pub fn hue_saturation(c: [f32; 3], hue: f32, s: f32, l: f32, colorize: bool) -> 
 /// corpus's rgb32 hue-saturation.psd is exact so.
 pub fn hue_saturation_in(c: [f32; 3], hue: f32, s: f32, l: f32, colorize: bool, depth: Option<SampleType>) -> [f32; 3] {
     let hdr = depth == Some(SampleType::F32);
-    let lighten = |v: f32| if l > 0.0 { v + (1.0 - v) * l } else { v * (1.0 + l) };
+    // Float Lightness (32-bit, unrounded, and Colorize): towards white / black.
+    let lighten_f = |v: f32| if l > 0.0 { v + (1.0 - v) * l } else { v * (1.0 + l) };
+    // 8-bit: Photoshop applies an integer LUT on each channel before HSL (probe hs-combo).
+    //   l < 0: k = round(255·(1+l)); out = round(c · k / 255)
+    //   l > 0: k = round(255·l);     out = round(c + (255−c)·k / 255)
+    let lighten_u8 = |v: f32| {
+        if l == 0.0 {
+            return v;
+        }
+        let c = (v * 255.0).round().clamp(0.0, 255.0);
+        let out = if l > 0.0 {
+            let k = (255.0 * l).round();
+            (c + (255.0 - c) * k / 255.0).round()
+        } else {
+            let k = (255.0 * (1.0 + l)).round();
+            (c * k / 255.0).round()
+        };
+        (out / 255.0).clamp(0.0, 1.0)
+    };
     if colorize {
         // Colorize builds the colour at the lightened (or darkened) lightness, so black with
         // Lightness +30 becomes a 30 % lightness colour, not grey (measured in Photoshop 27.11).
         let (_, _, ll) = rgb_to_hsl(c);
-        return hsl_to_rgb(hue.rem_euclid(360.0) / 360.0, s.abs().min(1.0), lighten(ll));
+        return hsl_to_rgb(hue.rem_euclid(360.0) / 360.0, s.abs().min(1.0), lighten_f(ll));
     }
     // Photoshop applies Lightness first, then rotates the hue and scales the saturation of the
     // result: Hue +40, Saturation +25, Lightness -10 turns (240, 160, 30) into (173, 243, 0), not
     // (168, 230, 14) (Photoshop 27.11 corpus file adjustments/rgb8/hue-saturation).
-    let lc = c.map(lighten);
+    let lc = if depth == Some(SampleType::U8) { c.map(lighten_u8) } else { c.map(lighten_f) };
     let (hh, ss, ll) = rgb_to_hsl(lc);
     let hh = (hh + hue / 360.0).rem_euclid(1.0);
     if hdr {

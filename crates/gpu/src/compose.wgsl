@@ -689,8 +689,21 @@ fn adjust(c: vec3<f32>) -> vec3<f32> {
                 return hsl_to_rgb(rem_euclid(p0.x, 360.0) / 360.0, min(abs(sat), 1.0), ll);
             }
             // Lightness first, then hue and saturation of the result.
-            var lc = c * (1.0 + light);
-            if (light > 0.0) { lc = c + (1.0 - c) * light; }
+            // 8/16-bit: Photoshop's integer channel LUT (compose::adjust::hue_saturation_in).
+            // 32-bit (hdr): float towards white / black.
+            var lc: vec3<f32>;
+            if (hdr || light == 0.0) {
+                lc = c * (1.0 + light);
+                if (light > 0.0) { lc = c + (1.0 - c) * light; }
+            } else if (light > 0.0) {
+                let k = round(255.0 * light);
+                let ci = round(clamp(c, vec3(0.0), vec3(1.0)) * 255.0);
+                lc = round(ci + (vec3(255.0) - ci) * k / 255.0) / 255.0;
+            } else {
+                let k = round(255.0 * (1.0 + light));
+                let ci = round(clamp(c, vec3(0.0), vec3(1.0)) * 255.0);
+                lc = round(ci * k / 255.0) / 255.0;
+            }
             let lh = rgb_to_hsl(lc);
             hh = rem_euclid(lh.x + (p0.x + dh) / 360.0, 1.0);
             var rgb: vec3<f32>;
@@ -813,10 +826,11 @@ fn gradient_t(d: vec2<i32>) -> f32 {
     let corner = 0.5 * (c - s);
     var t: f32;
     switch i32(op.p0.w) {
-        case 1: { t = sqrt(dx * dx + dy * dy) / (len / 2.0); }                  // Radial
+        // Radial/Diamond use chord radius (CPU effects::gradient_t); Radial stays Euclidean.
+        case 1: { t = sqrt(dx * dx + dy * dy) / (chord / 2.0); }                // Radial
         case 2: { t = rem_euclid((a - atan2(-dy, dx)) / 6.28318530718, 1.0); }   // Angle
         case 3: { t = abs((along - corner) / (chord / 2.0)); }                  // Reflected
-        case 4: { t = (abs(along) + abs(across)) / (len / 2.0); }               // Diamond
+        case 4: { t = (abs(along) + abs(across)) / (chord / 2.0); }             // Diamond
         default: { t = (along - corner) / chord + 0.5; }                        // Linear
     }
     t = clamp(t, 0.0, 1.0);

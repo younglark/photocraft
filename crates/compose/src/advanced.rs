@@ -27,7 +27,7 @@
 
 use std::borrow::Cow;
 
-use photocraft_doc::{Knockout, Layer, LayerContent};
+use photocraft_doc::{Effect, Knockout, Layer, LayerContent};
 use photocraft_geom::Rect;
 
 use crate::{Buffer, Ctx, composite_atop, composite_layer, effects, mask_vals, render_content};
@@ -200,15 +200,43 @@ pub(crate) fn clips_individually(layer: &Layer, clipped: &[Layer]) -> bool {
     !layer.advanced.blend_clipped && !matches!(layer.content, LayerContent::Adjustment(_)) && clipped.iter().any(|c| c.visible)
 }
 
+/// Whether `e` is an interior effect: painted with the layer's content (overlays, satin, inner
+/// glow/shadow, inside/center stroke, inner/emboss bevel). Exterior: drop shadow, outer glow,
+/// outside stroke, outer bevel. Used when Blend Interior Effects as Group is off so clipped
+/// layers sit between content and interior effects (Photoshop probe clip-*-bc0-bi0).
+fn is_interior_effect(e: &Effect) -> bool {
+    match e {
+        Effect::ColorOverlay { .. } | Effect::GradientOverlay { .. } | Effect::PatternOverlay { .. } | Effect::Satin(_) | Effect::InnerGlow(_) | Effect::InnerShadow(_) => true,
+        Effect::Stroke(s) => effects::stroke_widths(s).0 > 0.0,
+        Effect::BevelEmboss(b) => effects::bevel_geom(b).paint != effects::BevelPaint::Outer,
+        Effect::DropShadow(_) | Effect::OuterGlow(_) => false,
+    }
+}
+
 /// Blend Clipped Layers as Group off: the base alone (with its knockout `ko`), then each visible
 /// clipped layer composited in its own mode onto the result, inside the base's shape (its alpha
 /// with masks, times its opacity). A clipped layer's shallow knockout stops at the backdrop
 /// beneath the base (the bottom of the clipping group).
+///
+/// When Blend Interior Effects as Group is also off, interior effects paint **after** the clipped
+/// layers (content → clipped → interior → exterior already on the base). With it on, the base
+/// composites with all its effects first (content+interior as a group), then clipped on top.
 pub(crate) fn composite_clipped_individually(layer: &Layer, clipped: &[Layer], backdrop: &mut Buffer, cx: &Ctx, ko: Option<&Buffer>, scope: Scope) {
     let rect = backdrop.rect;
     let n = backdrop.px.len();
     let floor = clipped.iter().any(|c| c.visible && c.advanced.knockout == Knockout::Shallow).then(|| backdrop.clone());
-    composite_layer(layer, &[], backdrop, cx, ko, scope);
+    let defer_interior = !layer.advanced.blend_interior && layer.effects.items.iter().any(|e| e.enabled() && is_interior_effect(e));
+    // bi=F: composite base without interior effects first (exterior still paints with the base).
+    let base_cow;
+    let base = if defer_interior {
+        let mut bare = layer.clone();
+        bare.effects.items.retain(|e| !is_interior_effect(e));
+        base_cow = bare;
+        &base_cow
+    } else {
+        layer
+    };
+    composite_layer(base, &[], backdrop, cx, ko, scope);
     let op = layer.opacity.clamp(0.0, 1.0);
     let clip: Vec<f32> = match render_content(layer, rect, cx) {
         Some(b) => b.px.iter().map(|p| p[3] * op).collect(),
@@ -226,6 +254,15 @@ pub(crate) fn composite_clipped_individually(layer: &Layer, clipped: &[Layer], b
                 *p = mix(*b, *p, k.max(0.0));
             }
         }
+    }
+    // bi=F: paint interior effects on top of the clipped stack. fill_opacity 0 keeps content from
+    // re-blending; overlays/satin/… still cover the shape (Photoshop: fill applies to content
+    // only when interior effects are not grouped).
+    if defer_interior {
+        let mut fx_only = layer.clone();
+        fx_only.effects.items.retain(|e| is_interior_effect(e));
+        fx_only.fill_opacity = 0.0;
+        composite_layer(&fx_only, &[], backdrop, cx, None, scope);
     }
 }
 
